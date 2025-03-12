@@ -143,21 +143,21 @@ export default function Home() {
               <div className="flex flex-1 justify-around">
                 {/* Partner logos using Image components */}
                 <Image 
-                  src={getPublicPath("/partner1.avif")}
+                  src={getPublicPath("/partner1_light.avif")}
                   alt="Partner 1 Logo" 
                   width={180} 
                   height={80} 
                   className="object-contain p-4 rounded"
                 />
                 <Image 
-                  src={getPublicPath("/partner2.avif")}
+                  src={getPublicPath("/partner2_light.avif")}
                   alt="Partner 2 Logo" 
                   width={180} 
                   height={80}
                   className="object-contain p-4 rounded"
                 />
                 <Image 
-                  src={getPublicPath("/partner3.avif")}
+                  src={getPublicPath("/partner3_light.avif")}
                   alt="Partner 3 Logo" 
                   width={180} 
                   height={80}
