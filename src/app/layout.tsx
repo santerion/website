@@ -10,8 +10,8 @@ const quicksandFont = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Santerion | Software Development Company",
-  description: "We build innovative software solutions for businesses of all sizes.",
+  title: "Santerion | Software Development",
+  description: "Software on budget & on time",
 };
 
 export default function RootLayout({
