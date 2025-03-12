@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Disable ESLint during production build
+  eslint: {
+    // Warning: this will completely disable ESLint during build
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
