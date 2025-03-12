@@ -13,9 +13,9 @@ import {
 
 export function Navbar() {
   return (
-    <header className="w-full py-4 px-6 border-b">
+    <header className="w-full py-3 px-6 border-b">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold">
+        <Link href="/" className="text-2xl font-semibold">
           Santerion
         </Link>
         
@@ -24,7 +24,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/product" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Product
+                  <span className="text-lg font-semibold">Product</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -32,7 +32,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  About
+                  <span className="text-lg font-semibold">About</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -40,7 +40,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/partners" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Partners
+                  <span className="text-lg font-semibold">Partners</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -48,7 +48,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Contact us
+                  <span className="text-lg font-semibold">Contact us</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
