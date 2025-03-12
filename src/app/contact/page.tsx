@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/Navbar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 export default function ContactPage() {
   return (
@@ -8,63 +10,80 @@ export default function ContactPage() {
       <Navbar />
       <main className="flex-1 py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+          <h1 className="text-4xl font-bold mb-4">Let's do it!</h1>
           <p className="text-xl text-muted-foreground mb-12">
-            We'd love to hear from you. Contact us to discuss your project.
+            Let's have a call and discuss your custom solution
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <Card>
-              <CardContent className="pt-6">
-                <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
-                <div className="space-y-4">
-                  <p className="flex flex-col">
-                    <span className="text-sm text-muted-foreground">Email</span>
-                    <span>info@santerion.com</span>
-                  </p>
-                  <p className="flex flex-col">
-                    <span className="text-sm text-muted-foreground">Phone</span>
-                    <span>+1 (123) 456-7890</span>
-                  </p>
-                  <p className="flex flex-col">
-                    <span className="text-sm text-muted-foreground">Address</span>
-                    <span>123 Tech Street, San Francisco, CA 94107</span>
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card>
-              <CardContent className="pt-6">
-                <h2 className="text-xl font-semibold mb-4">Business Hours</h2>
-                <div className="space-y-2">
-                  <p className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM</span>
-                  </p>
-                  <p className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>10:00 AM - 2:00 PM</span>
-                  </p>
-                  <p className="flex justify-between">
-                    <span>Sunday</span>
-                    <span>Closed</span>
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-          
-          <div className="text-center">
-            <p className="mb-6 text-muted-foreground">Contact form will be added here later</p>
-            <Button disabled>Send Message</Button>
+          <div className="mb-12">
+            <form className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block mb-2 font-medium">
+                  NAME*
+                </label>
+                <Input id="name" required />
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block mb-2 font-medium">
+                  EMAIL*
+                </label>
+                <Input id="email" type="email" required />
+              </div>
+              
+              <div>
+                <label htmlFor="company" className="block mb-2 font-medium">
+                  COMPANY
+                </label>
+                <Input id="company" />
+              </div>
+              
+              <div>
+                <label htmlFor="job-title" className="block mb-2 font-medium">
+                  JOB TITLE
+                </label>
+                <Input id="job-title" />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block mb-2 font-medium">
+                  MESSAGE
+                </label>
+                <Textarea 
+                  id="message" 
+                  placeholder="Tell us about the software you want to build" 
+                  className="min-h-32"
+                />
+              </div>
+              
+              <Button type="submit" size="lg" className="w-full">
+                Submit
+              </Button>
+            </form>
           </div>
         </div>
       </main>
       
-      <footer className="py-6 px-6 border-t mt-16">
-        <div className="max-w-7xl mx-auto text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Santerion. All rights reserved.
+      <footer className="py-8 px-6 border-t mt-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="text-lg font-bold mb-4">Santerion</div>
+              <div className="text-muted-foreground">@santerion.com</div>
+            </div>
+            <div>
+              <div className="font-medium mb-4">Links</div>
+              <ul className="space-y-2 text-muted-foreground">
+                <li><a href="/portfolio" className="hover:text-foreground">PORTFOLIO</a></li>
+                <li><a href="/pricing" className="hover:text-foreground">PRICING</a></li>
+                <li><a href="/contact" className="hover:text-foreground">CONTACT</a></li>
+                <li><a href="/sla" className="hover:text-foreground">SLA</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="text-center text-sm text-muted-foreground pt-4 border-t">
+            ©{new Date().getFullYear()} BY SANTERION.
+          </div>
         </div>
       </footer>
     </div>

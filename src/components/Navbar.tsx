@@ -22,29 +22,33 @@ export function Navbar() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="/product" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Home
+                  Product
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Portfolio</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="p-4 w-[200px]">
-                  <p className="text-sm text-muted-foreground mb-2">
-                    Our projects will appear here
-                  </p>
-                  {/* Project links will go here */}
-                </div>
-              </NavigationMenuContent>
+              <Link href="/about" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  About
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            
+            <NavigationMenuItem>
+              <Link href="/partners" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Partners
+                </NavigationMenuLink>
+              </Link>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Contact
+                  Contact us
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
