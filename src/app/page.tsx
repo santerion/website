@@ -16,7 +16,7 @@ export default function Home() {
         {/* How we work section */}
         <section className="pb-42 pt-28 px-6 bg-muted/50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-6xl font-bold text-center mb-12">How we work</h2>
+            <h2 className="text-6xl font-bold text-center mb-12 text-violet-900">How we work</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card>
                 <CardContent className="pt-6">
@@ -66,7 +66,7 @@ export default function Home() {
         
         {/* Understand Users Better section */}
         <section 
-          className="py-40 px-6 relative overflow-hidden backdrop-brightness-50 bg-blue-400/80"
+          className="py-40 px-6 relative overflow-hidden backdrop-brightness-50 bg-violet-700"
           style={{
             backgroundImage: `url('${getPublicPath('/bg_users.avif')}')`,
             backgroundAttachment: "fixed",
@@ -76,7 +76,7 @@ export default function Home() {
           }}
         >
           {/* Add a semi-transparent overlay to ensure text readability */}
-          <div className="absolute inset-0 bg-indigo-500/10"></div>
+          <div className="absolute inset-0"></div>
           
           <div className="max-w-2xl mx-auto items-center text-center relative z-10 text-white">
             <div className="p-8 rounded-lg">
@@ -94,7 +94,7 @@ export default function Home() {
         {/* About section */}
         <section className="py-16 px-6 bg-muted/0">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-6xl font-bold pl-16 mb-28 mt-20">About</h2>
+            <h2 className="text-6xl font-bold text-violet-900 pl-16 mb-28 mt-20">About</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40">
               <div className="text-center">
@@ -134,7 +134,7 @@ export default function Home() {
         </section>
         
         {/* Partners section */}
-        <section className="py-36 px-6 bg-blue-500/85">
+        <section className="py-36 px-6 bg-violet-600">
           <div className="max-w-4xl mx-auto">
             {/* Partners heading and logos */}
             <div className="flex items-center mb-10">
@@ -189,7 +189,7 @@ export default function Home() {
         {/* Contact CTA section */}
         <section className="py-64 px-6 bg-muted/50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-6xl font-bold mb-4">Let's do it!</h2>
+            <h2 className="text-6xl font-bold mb-4 text-violet-900">Let's do it!</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Let's have a call and discuss your custom solution
             </p>
@@ -202,7 +202,7 @@ export default function Home() {
         </section>
       </main>
       
-      <footer className="py-8 px-6 border-t bg-blue-500/85">
+      <footer className="py-8 px-6 border-t bg-violet-800">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
