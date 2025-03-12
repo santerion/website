@@ -3,8 +3,10 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 
 const quicksandFont = Quicksand({
-  variable: "--font-quicksand",
   subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-quicksand",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksandFont.variable} antialiased`}
+        className={`${quicksandFont.variable} font-sans antialiased`}
         suppressHydrationWarning={true}
       >
         {children}
