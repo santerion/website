@@ -84,9 +84,9 @@ export default function Home() {
         {/* About section */}
         <section className="py-16 px-6 bg-muted/50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">About</h2>
+            <h2 className="text-6xl font-bold pl-16 text-sky-600 mb-28 mt-20">About</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">5+</div>
                 <p className="text-muted-foreground">Years in business</p>
@@ -102,35 +102,24 @@ export default function Home() {
                 <p className="text-muted-foreground">of avg. project life-cycle</p>
               </div>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-2">Flexibility</h3>
-                  <p className="text-muted-foreground">
-                    Scale up or ramp down the team
-                  </p>
-                </CardContent>
-              </Card>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-28">
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">Flexibility</div>
+                <p className="text-muted-foreground">Scale up or ramp down the team</p>
+              </div>
               
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-2">Pricing</h3>
-                  <p className="text-muted-foreground">
-                    Min. project U$25k total
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">Pricing</div>
+                <p className="text-muted-foreground">Min. project U$25k total</p>
+              </div>
               
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-2">Team</h3>
-                  <p className="text-muted-foreground">
-                    60% senior engineers, from startups to FAANG
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">Team</div>
+                <p className="text-muted-foreground">60% senior engineers, from startups to FAANG</p>
+              </div>
             </div>
+
           </div>
         </section>
         
