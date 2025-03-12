@@ -13,9 +13,9 @@ export default function Home() {
         <Hero />
         
         {/* How we work section */}
-        <section className="py-16 px-6 bg-muted/50">
+        <section className="pb-42 pt-28 px-6 bg-muted/50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">How we work</h2>
+            <h2 className="text-6xl font-bold text-center mb-12">How we work</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card>
                 <CardContent className="pt-6">
@@ -79,9 +79,9 @@ export default function Home() {
           
           <div className="max-w-2xl mx-auto items-center text-center relative z-10 text-white">
             <div className="p-8 rounded-lg">
-              <h2 className="text-6xl font-bold mb-6 text-white">Understand Your<br />Users Better</h2>
+              <h2 className="text-6xl font-bold mb-6 text-white">Make something<br />people love</h2>
               <p className="text-lg mb-8 font-semibold text-white">
-                I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
+                We build software that connects deeply with your users. Our development approach combines cutting-edge technology with human-centered design principles to create intuitive, responsive solutions. From initial research to final deployment, we ensure every line of code enhances your users' experience and drives your business goals forward.
               </p>
               <Button size="lg" className="border-2 bg-transparent border-white hover:bg-transparent hover:border-3 hover:font-bold font-semibold hover:cursor-pointer text-white shadow-xl">
                 Get a Demo
@@ -91,9 +91,9 @@ export default function Home() {
         </section>
         
         {/* About section */}
-        <section className="py-16 px-6 bg-muted/50">
+        <section className="py-16 px-6 bg-muted/0">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-6xl font-bold pl-16 text-sky-600 mb-28 mt-20">About</h2>
+            <h2 className="text-6xl font-bold pl-16 mb-28 mt-20">About</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40">
               <div className="text-center">
@@ -133,26 +133,62 @@ export default function Home() {
         </section>
         
         {/* Partners section */}
-        <section className="py-20 px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-12">Partners</h2>
+        <section className="py-36 px-6 bg-blue-500/85">
+          <div className="max-w-4xl mx-auto">
+            {/* Partners heading and logos */}
+            <div className="flex items-center mb-10">
+              <h2 className="text-6xl font-bold mr-6 text-white">Partners</h2>
+              <div className="h-12 border-l-2 border-white mx-6"></div> {/* Vertical bar */}
+              <div className="flex flex-1 justify-around">
+                {/* Partner logos using Image components */}
+                <Image 
+                  src="/partner1.avif" 
+                  alt="Partner 1 Logo" 
+                  width={180} 
+                  height={80} 
+                  className="object-contain p-4 rounded"
+                />
+                <Image 
+                  src="/partner2.avif" 
+                  alt="Partner 2 Logo" 
+                  width={180} 
+                  height={80}
+                  className="object-contain p-4 rounded"
+                />
+                <Image 
+                  src="/partner3.avif" 
+                  alt="Partner 3 Logo" 
+                  width={180} 
+                  height={80}
+                  className="object-contain p-4 rounded"
+                />
+              </div>
+            </div>
             
-            <Card className="mx-auto max-w-3xl">
-              <CardContent className="pt-8 pb-8 px-6 md:px-10">
-                <p className="text-lg mb-6 italic">
-                  "Santerion delivered an exceptional AI solution on time and within budget. Their expertise, passion, and hands-on approach showed true commitment to our success."
-                </p>
-                <div className="font-semibold">G. Dantas</div>
-                <div className="text-muted-foreground">CTO at Catalunya</div>
-              </CardContent>
-            </Card>
+            {/* Horizontal line */}
+            <div className="border-t-2 border-white/30 mb-10"></div>
+            
+            {/* Testimonial */}
+            <div className="mx-auto max-w-4xl text-center">
+              {/* Name and title with vertical bar */}
+              <div className="flex items-center justify-center mb-6">
+                <div className="font-bold text-xl text-white">G. Dantas</div>
+                <div className="h-6 border-l-2 border-white/70 mx-4"></div> {/* Vertical bar */}
+                <div className="text-gray-100 text-xl font-semibold">CTO at Catalunya</div>
+              </div>
+              
+              {/* Testimonial text */}
+              <p className="text-3xl italic text-white font-semibold">
+                "Santerion delivered an exceptional AI solution on time and within budget. Their expertise, passion, and hands-on approach showed true commitment to our success."
+              </p>
+            </div>
           </div>
         </section>
         
         {/* Contact CTA section */}
-        <section className="py-16 px-6 bg-muted/50">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Let's do it!</h2>
+        <section className="py-64 px-6 bg-muted/50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-6xl font-bold mb-4">Let's do it!</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Let's have a call and discuss your custom solution
             </p>
@@ -165,16 +201,16 @@ export default function Home() {
         </section>
       </main>
       
-      <footer className="py-8 px-6 border-t">
+      <footer className="py-8 px-6 border-t bg-blue-500/85">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-lg font-bold mb-4">Santerion</div>
-              <div className="text-muted-foreground">@santerion.com</div>
+              <div className="text-xl font-bold mb-4 text-white">Santerion</div>
+              <div className="text-white">@santerion.com</div>
             </div>
             <div>
-              <div className="font-medium mb-4">Links</div>
-              <ul className="space-y-2 text-muted-foreground">
+              <div className="font-bold mb-4 text-white text-xl">Links</div>
+              <ul className="space-y-2 text-white">
                 <li><Link href="/portfolio" className="hover:text-foreground">PORTFOLIO</Link></li>
                 <li><Link href="/pricing" className="hover:text-foreground">PRICING</Link></li>
                 <li><Link href="/contact" className="hover:text-foreground">CONTACT</Link></li>
@@ -182,8 +218,8 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="text-center text-sm text-muted-foreground pt-4 border-t">
-            ©{new Date().getFullYear()} BY SANTERION.
+          <div className="text-center text-md text-white pt-4 border-t">
+            ©{new Date().getFullYear()} by Santerion.
           </div>
         </div>
       </footer>
