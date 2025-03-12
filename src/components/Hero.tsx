@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import { getPublicPath } from "@/lib/path-utils"
 
 export function Hero() {
   return (
@@ -8,7 +9,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/bg-blue.avif" 
+          src={getPublicPath("/bg-blue.avif")}
           alt="Blue skies background"
           fill
           priority

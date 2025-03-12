@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import { getPublicPath } from "@/lib/path-utils"
 
 export default function Home() {
   return (
@@ -67,7 +68,7 @@ export default function Home() {
         <section 
           className="py-40 px-6 relative overflow-hidden backdrop-brightness-50 bg-blue-400/80"
           style={{
-            backgroundImage: "url('/bg_users.avif')",
+            backgroundImage: `url('${getPublicPath('/bg_users.avif')}')`,
             backgroundAttachment: "fixed",
             backgroundSize: "cover",
             backgroundPosition: "center center",
@@ -142,21 +143,21 @@ export default function Home() {
               <div className="flex flex-1 justify-around">
                 {/* Partner logos using Image components */}
                 <Image 
-                  src="/partner1.avif" 
+                  src={getPublicPath("/partner1.avif")}
                   alt="Partner 1 Logo" 
                   width={180} 
                   height={80} 
                   className="object-contain p-4 rounded"
                 />
                 <Image 
-                  src="/partner2.avif" 
+                  src={getPublicPath("/partner2.avif")}
                   alt="Partner 2 Logo" 
                   width={180} 
                   height={80}
                   className="object-contain p-4 rounded"
                 />
                 <Image 
-                  src="/partner3.avif" 
+                  src={getPublicPath("/partner3.avif")}
                   alt="Partner 3 Logo" 
                   width={180} 
                   height={80}
