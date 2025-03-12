@@ -64,17 +64,26 @@ export default function Home() {
         </section>
         
         {/* Understand Users Better section */}
-        <section className="py-20 px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="bg-muted h-[400px] rounded-lg flex items-center justify-center">
-              <p className="text-muted-foreground">Start-up_Landing_Page_02.png</p>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Understand Your<br />Users Better</h2>
-              <p className="text-lg text-muted-foreground mb-8">
+        <section 
+          className="py-40 px-6 relative overflow-hidden backdrop-brightness-50 bg-blue-400/80"
+          style={{
+            backgroundImage: "url('/bg_users.avif')",
+            backgroundAttachment: "fixed",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundBlendMode: "overlay"
+          }}
+        >
+          {/* Add a semi-transparent overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-indigo-500/10"></div>
+          
+          <div className="max-w-2xl mx-auto items-center text-center relative z-10 text-white">
+            <div className="p-8 rounded-lg">
+              <h2 className="text-6xl font-bold mb-6 text-white">Understand Your<br />Users Better</h2>
+              <p className="text-lg mb-8 font-semibold text-white">
                 I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
               </p>
-              <Button size="lg">
+              <Button size="lg" className="border-2 bg-transparent border-white hover:bg-transparent hover:border-3 hover:font-bold font-semibold hover:cursor-pointer text-white shadow-xl">
                 Get a Demo
               </Button>
             </div>
@@ -89,34 +98,34 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">5+</div>
-                <p className="text-muted-foreground">Years in business</p>
+                <p className="text-gray-800">Years in business</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">100%</div>
-                <p className="text-muted-foreground">Projects on budget and on time</p>
+                <p className="text-gray-800">Projects on budget and on time</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">8 months</div>
-                <p className="text-muted-foreground">of avg. project life-cycle</p>
+                <p className="text-gray-800">of avg. project life-cycle</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-28">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">Flexibility</div>
-                <p className="text-muted-foreground">Scale up or ramp down the team</p>
+                <p className="text-gray-800">Scale up or ramp down the team</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">Pricing</div>
-                <p className="text-muted-foreground">Min. project U$25k total</p>
+                <p className="text-gray-800">Min. project U$25k total</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">Team</div>
-                <p className="text-muted-foreground">60% senior engineers, from startups to FAANG</p>
+                <p className="text-gray-800">60% senior engineers, from startups to FAANG</p>
               </div>
             </div>
 

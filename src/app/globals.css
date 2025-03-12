@@ -123,5 +123,9 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-quicksand), 'Quicksand', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 }
+
+/* Remove the old parallax styles since we're using a different approach */
