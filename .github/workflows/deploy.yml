@@ -40,6 +40,9 @@ jobs:
       - name: Generate 404.html
         run: node scripts/generate-404.js
 
+      - name: Create .nojekyll file
+        run: touch out/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
