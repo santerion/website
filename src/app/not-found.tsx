@@ -1,9 +1,11 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 
-export default function Custom404() {
+export default function NotFound() {
   const router = useRouter();
-
+  
   useEffect(() => {
     // On GitHub Pages, the 404.html page is served for all missing routes
     // This script handles redirects to the correct route
@@ -13,9 +15,9 @@ export default function Custom404() {
     // If current path starts with the base path, redirect to the path without it
     if (pathname.startsWith(basePath) && pathname !== basePath && pathname !== basePath + '/') {
       const newPath = pathname.slice(basePath.length);
-      router.replace(newPath);
+      window.location.href = newPath; // Using window.location since router.replace doesn't work with external paths
     }
-  }, [router]);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center">
