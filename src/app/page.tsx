@@ -134,7 +134,7 @@ export default function Home() {
         </section>
         
         {/* Partners section */}
-        <section className="py-36 px-6 bg-violet-600">
+        <section className="py-36 px-6 bg-gradient-to-br from-violet-700 to-violet-950">
           <div className="max-w-4xl mx-auto">
             {/* Partners heading and logos */}
             <div className="flex items-center mb-10">
@@ -193,7 +193,7 @@ export default function Home() {
             <p className="text-xl text-muted-foreground mb-8">
               Let's have a call and discuss your custom solution
             </p>
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-violet-900 hover:bg-violet-800 shadow-md shadow-violet-300">
               <Link href="/contact">
                 Contact Us
               </Link>
