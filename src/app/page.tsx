@@ -14,52 +14,40 @@ export default function Home() {
         <Hero />
         
         {/* How we work section */}
-        <section className="pb-42 pt-28 px-6 bg-muted/50">
+        <section className="pb-28 pt-28 px-6 bg-muted/50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-6xl font-bold text-center mb-12 text-violet-900">How we work</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-3xl font-bold mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-2">Contact us</h3>
-                  <p className="text-muted-foreground mb-4">
+            <div className="flex flex-col max-w-xl mx-auto space-y-6">
+              <div>
+                  <h3 className="text-4xl font-bold mt-8 mb-2">01. Contact us</h3>
+                  <p className="text-muted-foreground">
                     We start with your vision: What do you want to build?
                   </p>
                   <p className="text-muted-foreground">
                     Text us about the project you are building.
                   </p>
-                </CardContent>
-              </Card>
+              </div>
               
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-3xl font-bold mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-2">Get a consultation</h3>
+              <div>
+                  <h3 className="text-4xl font-bold mt-8 mb-2">02. Get a consultation</h3>
                   <p className="text-muted-foreground">
                     Our team will contact you back to discuss the details and feasibility of your project.
                   </p>
-                </CardContent>
-              </Card>
+              </div>
               
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-3xl font-bold mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-2">Get a project estimation</h3>
+              <div>
+                  <h3 className="text-4xl font-bold mt-8 mb-2">03. Get a project estimation</h3>
                   <p className="text-muted-foreground">
                     Santerion's enterprise software developers will ponder the most viable tech stack and team size to present you with the total cost.
                   </p>
-                </CardContent>
-              </Card>
+              </div>
               
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-3xl font-bold mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-2">Start</h3>
+              <div>
+                  <h3 className="text-4xl font-bold mt-8 mb-2">04. Start</h3>
                   <p className="text-muted-foreground">
                     Once we agreed on terms, we start building a custom software solution for your business right away.
                   </p>
-                </CardContent>
-              </Card>
+              </div>
             </div>
           </div>
         </section>
@@ -134,7 +122,7 @@ export default function Home() {
         </section>
         
         {/* Partners section */}
-        <section className="py-36 px-6 bg-gradient-to-br from-violet-700 to-violet-950">
+        <section className="pt-28 pb-36 px-6 bg-gradient-to-br from-violet-700 to-violet-950">
           <div className="max-w-4xl mx-auto">
             {/* Partners heading and logos */}
             <div className="flex items-center mb-10">
@@ -167,19 +155,19 @@ export default function Home() {
             </div>
             
             {/* Horizontal line */}
-            <div className="border-t-2 border-white/30 mb-10"></div>
+            <div className="border-t-2 border-white/90 mb-10"></div>
             
             {/* Testimonial */}
-            <div className="mx-auto max-w-4xl text-center">
+            <div className="mx-auto max-w-4xl">
               {/* Name and title with vertical bar */}
-              <div className="flex items-center justify-center mb-6">
-                <div className="font-bold text-xl text-white">G. Dantas</div>
-                <div className="h-6 border-l-2 border-white/70 mx-4"></div> {/* Vertical bar */}
-                <div className="text-gray-100 text-xl font-semibold">CTO at Catalunya</div>
+              <div className="flex mb-6">
+                <div className="text-xl text-white">G. Dantas</div>
+                <div className="h-6 border-l-2 border-white/70 mx-6"></div> {/* Vertical bar */}
+                <div className="text-gray-100 text-xl">CTO at Catalunya</div>
               </div>
               
               {/* Testimonial text */}
-              <p className="text-3xl italic text-white font-semibold">
+              <p className="text-3xl italic max-w-2xl text-white font-semibold">
                 "Santerion delivered an exceptional AI solution on time and within budget. Their expertise, passion, and hands-on approach showed true commitment to our success."
               </p>
             </div>
