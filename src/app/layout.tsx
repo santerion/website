@@ -17,6 +17,25 @@ export const metadata: Metadata = {
     icon: getPublicPath('/icon_violet.avif'),
     apple: getPublicPath('/icon_violet.avif'),
   },
+  openGraph: {
+    title: "Santerion | Software Development",
+    description: "Software on budget & on time",
+    images: [
+      {
+        url: getPublicPath('/logo_violet_light.avif'),
+        width: 1200,
+        height: 630,
+        alt: "Santerion Logo",
+      }
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Santerion | Software Development",
+    description: "Software on budget & on time",
+    images: [getPublicPath('/logo_violet_light.avif')],
+  },
 };
 
 export default function RootLayout({
