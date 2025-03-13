@@ -32,6 +32,8 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         {children}
+        {/* 100% privacy-first analytics */}
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       </body>
     </html>
   );
