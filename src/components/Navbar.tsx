@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { getPublicPath } from "@/lib/path-utils"
 import { 
   NavigationMenu,
   NavigationMenuContent,
@@ -18,7 +19,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-semibold flex items-center gap-1">
           <Image 
-            src="/icon_violet.avif"
+            src={getPublicPath('/icon_violet.avif')}
             alt="Santerion Logo"
             width={30}
             height={30}

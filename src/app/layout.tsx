@@ -12,6 +12,10 @@ const quicksandFont = Quicksand({
 export const metadata: Metadata = {
   title: "Santerion | Software Development",
   description: "Software on budget & on time",
+  icons: {
+    icon: '/icon_violet.avif',
+    apple: '/icon_violet.avif',
+  },
 };
 
 export default function RootLayout({
