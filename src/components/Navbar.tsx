@@ -29,9 +29,9 @@ export function Navbar() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/product" legacyBehavior passHref>
+              <Link href="/portfolio" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <span className="text-lg font-semibold text-violet-950">Product</span>
+                  <span className="text-lg font-semibold text-violet-950">Portfolio</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

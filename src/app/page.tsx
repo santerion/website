@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { getPublicPath } from "@/lib/path-utils"
+import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -54,7 +55,7 @@ export default function Home() {
         
         {/* Understand Users Better section */}
         <section 
-          className="py-40 px-6 relative overflow-hidden backdrop-brightness-50 bg-violet-700"
+          className="py-40 px-6 relative overflow-hidden backdrop-brightness-50 bg-violet-800"
           style={{
             backgroundImage: `url('${getPublicPath('/bg_users.avif')}')`,
             backgroundAttachment: "fixed",
@@ -68,12 +69,12 @@ export default function Home() {
           
           <div className="max-w-2xl mx-auto items-center text-center relative z-10 text-white">
             <div className="p-8 rounded-lg">
-              <h2 className="text-6xl font-bold mb-6 text-white">Make something<br />people love</h2>
-              <p className="text-lg mb-8 font-semibold text-white">
-                We build software that connects deeply with your users. Our development approach combines cutting-edge technology with human-centered design principles to create intuitive, responsive solutions. From initial research to final deployment, we ensure every line of code enhances your users' experience and drives your business goals forward.
+              <h2 className="text-6xl font-bold mb-6 text-white">Make something<br />people want</h2>
+              <p className="text-2xl mb-8 font-semibold text-white">
+                Happy users. Fast launches. <br /> That's how we build software.
               </p>
               <Button size="lg" className="border-2 bg-transparent border-white hover:bg-transparent hover:border-3 hover:font-bold font-semibold hover:cursor-pointer text-white shadow-xl">
-                Get a Demo
+                <Link href="/contact">Contact us</Link>
               </Button>
             </div>
           </div>
@@ -190,28 +191,7 @@ export default function Home() {
         </section>
       </main>
       
-      <footer className="py-8 px-6 border-t bg-violet-800">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="text-xl font-bold mb-4 text-white">Santerion</div>
-              <div className="text-white">@santerion.com</div>
-            </div>
-            <div>
-              <div className="font-bold mb-4 text-white text-xl">Links</div>
-              <ul className="space-y-2 text-white">
-                <li><Link href="/portfolio" className="hover:text-foreground">PORTFOLIO</Link></li>
-                <li><Link href="/pricing" className="hover:text-foreground">PRICING</Link></li>
-                <li><Link href="/contact" className="hover:text-foreground">CONTACT</Link></li>
-                <li><Link href="/sla" className="hover:text-foreground">SLA</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="text-center text-md text-white pt-4 border-t">
-            ©{new Date().getFullYear()} by Santerion.
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 }

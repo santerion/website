@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer"
 import { Navbar } from "@/components/Navbar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -8,9 +9,9 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-1 py-16 px-6">
+      <main className="flex-1 py-12 px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4">Let's do it!</h1>
+          <h1 className="text-5xl font-bold mb-4 text-violet-950">Let's do it!</h1>
           <p className="text-xl text-muted-foreground mb-12">
             Let's have a call and discuss your custom solution
           </p>
@@ -56,7 +57,7 @@ export default function ContactPage() {
                 />
               </div>
               
-              <Button type="submit" size="lg" className="w-full">
+              <Button type="submit" size="lg" className="w-full bg-violet-950 text-white hover:bg-violet-900 cursor-pointer">
                 Submit
               </Button>
             </form>
@@ -64,28 +65,7 @@ export default function ContactPage() {
         </div>
       </main>
       
-      <footer className="py-8 px-6 border-t mt-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="text-lg font-bold mb-4">Santerion</div>
-              <div className="text-muted-foreground">@santerion.com</div>
-            </div>
-            <div>
-              <div className="font-medium mb-4">Links</div>
-              <ul className="space-y-2 text-muted-foreground">
-                <li><a href="/portfolio" className="hover:text-foreground">PORTFOLIO</a></li>
-                <li><a href="/pricing" className="hover:text-foreground">PRICING</a></li>
-                <li><a href="/contact" className="hover:text-foreground">CONTACT</a></li>
-                <li><a href="/sla" className="hover:text-foreground">SLA</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="text-center text-sm text-muted-foreground pt-4 border-t">
-            ©{new Date().getFullYear()} BY SANTERION.
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 } 
