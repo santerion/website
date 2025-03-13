@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
+import { getPublicPath } from "@/lib/path-utils"
 import "./globals.css";
 
 const quicksandFont = Quicksand({
@@ -13,8 +14,8 @@ export const metadata: Metadata = {
   title: "Santerion | Software Development",
   description: "Software on budget & on time",
   icons: {
-    icon: '/icon_violet.avif',
-    apple: '/icon_violet.avif',
+    icon: getPublicPath('/icon_violet.avif'),
+    apple: getPublicPath('/icon_violet.avif'),
   },
 };
 
