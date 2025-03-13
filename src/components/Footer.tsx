@@ -6,12 +6,12 @@ export function Footer() {
         <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-            <div className="text-xl font-bold mb-4 text-white">Santerion</div>
+            <div className="text-lg font-bold mb-4 text-white">Santerion</div>
             <div className="text-white">@santerion.com</div>
             </div>
             <div>
-            <div className="font-bold mb-4 text-white text-xl">Links</div>
-            <ul className="space-y-2 text-white">
+            <div className="font-bold mb-4 text-white text-lg">Links</div>
+            <ul className="space-y-2 text-white text-sm">
                 <li><Link href="/portfolio" className="hover:text-foreground">PORTFOLIO</Link></li>
                 <li><Link href="/pricing" className="hover:text-foreground">PRICING</Link></li>
                 <li><Link href="/contact" className="hover:text-foreground">CONTACT</Link></li>
@@ -19,7 +19,7 @@ export function Footer() {
             </ul>
             </div>
         </div>
-        <div className="text-center text-md text-white pt-4 border-t">
+        <div className="text-center text-sm text-white pt-4 border-t">
             ©{new Date().getFullYear()} by Santerion.
         </div>
         </div>

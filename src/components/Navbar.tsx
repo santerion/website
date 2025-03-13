@@ -15,16 +15,16 @@ import {
 
 export function Navbar() {
   return (
-    <header className="w-full py-3 px-6 border-b">
+    <header className="w-full py-1 px-20 border-b">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-semibold flex items-center gap-1">
           <Image 
             src={getPublicPath('/icon_violet.avif')}
             alt="Santerion Logo"
-            width={30}
-            height={30}
+            width={24}
+            height={24}
           />
-          <span className="text-2xl font-bold text-violet-900">Santerion</span>
+          <span className="text-lg font-bold text-violet-950">Santerion</span>
         </Link>
         
         <NavigationMenu>
@@ -32,7 +32,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/portfolio" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <span className="text-lg font-semibold text-violet-950">Portfolio</span>
+                  <span className="text-md font-semibold text-violet-950">Portfolio</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -40,7 +40,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <span className="text-lg font-semibold text-violet-950">About</span>
+                  <span className="text-md font-semibold text-violet-950">About</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -48,7 +48,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/partners" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <span className="text-lg font-semibold text-violet-950">Partners</span>
+                  <span className="text-md font-semibold text-violet-950">Partners</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -56,7 +56,7 @@ export function Navbar() {
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <span className="text-lg font-semibold text-violet-950">Contact us</span>
+                  <span className="text-md font-semibold text-violet-950">Contact us</span>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

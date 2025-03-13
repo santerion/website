@@ -17,7 +17,7 @@ export default function Home() {
         {/* How we work section */}
         <section className="pb-28 pt-28 px-6 bg-muted/50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-6xl font-bold text-center mb-12 text-violet-900">How we work</h2>
+            <h2 className="text-6xl font-bold text-center mb-12 bg-gradient-to-r from-violet-700 to-violet-950 bg-clip-text text-transparent">How we work</h2>
             <div className="flex flex-col max-w-xl mx-auto space-y-6">
               <div>
                   <h3 className="text-4xl font-bold mt-8 mb-2">01. Contact us</h3>
@@ -73,7 +73,7 @@ export default function Home() {
               <p className="text-2xl mb-8 font-semibold text-white">
                 Happy users. Fast launches. <br /> That's how we build software.
               </p>
-              <Button size="lg" className="border-2 bg-transparent border-white hover:bg-transparent hover:border-3 hover:font-bold font-semibold hover:cursor-pointer text-white shadow-xl">
+              <Button size="lg" className="ring-2 bg-transparent border-white font-semibold hover:cursor-pointer hover:ring-3 text-white hover:bg-white/10">
                 <Link href="/contact">Contact us</Link>
               </Button>
             </div>
@@ -83,7 +83,7 @@ export default function Home() {
         {/* About section */}
         <section className="py-16 px-6 bg-muted/0">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-6xl font-bold text-violet-900 pl-16 mb-28 mt-20">About</h2>
+            <h2 className="text-6xl font-bold bg-gradient-to-r from-violet-700 to-violet-950 bg-clip-text text-transparent pl-16 mb-28 mt-20">About</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40">
               <div className="text-center">
@@ -178,11 +178,11 @@ export default function Home() {
         {/* Contact CTA section */}
         <section className="py-64 px-6 bg-muted/50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-6xl font-bold mb-4 text-violet-900">Let's do it!</h2>
+            <h2 className="text-6xl font-bold mb-4 bg-gradient-to-r from-violet-700 to-violet-950 bg-clip-text text-transparent">Let's do it!</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Let's have a call and discuss your custom solution
             </p>
-            <Button asChild size="lg" className="bg-violet-900 hover:bg-violet-800 shadow-md shadow-violet-300">
+            <Button asChild size="lg" className="bg-gradient-to-r from-violet-700 to-violet-950 hover:bg-gradient-to-r hover:from-violet-600 hover:to-violet-900 shadow-md shadow-violet-300">
               <Link href="/contact">
                 Contact Us
               </Link>

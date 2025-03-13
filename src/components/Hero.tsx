@@ -5,7 +5,7 @@ import { getPublicPath } from "@/lib/path-utils"
 
 export function Hero() {
   return (
-    <div className="relative w-full min-h-[calc(100vh-58px)] flex items-center justify-center">
+    <div className="relative w-full min-h-[calc(100vh-44px)] flex items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 

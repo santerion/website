@@ -27,7 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksandFont.variable} font-sans antialiased`}
+        // className={`${quicksandFont.variable} font-sans antialiased`}
+        className='font-sans antialiased'
         suppressHydrationWarning={true}
       >
         {children}
