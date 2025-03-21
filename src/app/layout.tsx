@@ -10,6 +10,9 @@ const quicksandFont = Quicksand({
   variable: "--font-quicksand",
 });
 
+// Get the absolute URL for the image
+const logoUrl = `https://santerion.com${getPublicPath('/logo_violet_light.avif')}`;
+
 export const metadata: Metadata = {
   title: "Santerion | Software Development",
   description: "Software on budget & on time",
@@ -17,24 +20,27 @@ export const metadata: Metadata = {
     icon: getPublicPath('/icon_violet.avif'),
     apple: getPublicPath('/icon_violet.avif'),
   },
+  metadataBase: new URL('https://santerion.com'),
   openGraph: {
     title: "Santerion | Software Development",
     description: "Software on budget & on time",
     images: [
       {
-        url: getPublicPath('/logo_violet_light.avif'),
+        url: logoUrl,
         width: 1200,
         height: 630,
         alt: "Santerion Logo",
       }
     ],
     type: 'website',
+    siteName: 'Santerion',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Santerion | Software Development",
     description: "Software on budget & on time",
-    images: [getPublicPath('/logo_violet_light.avif')],
+    images: [logoUrl],
+    creator: '@santerion',
   },
 };
 
@@ -45,6 +51,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Explicit Open Graph meta tags */}
+        <meta property="og:image" content={logoUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Santerion Logo" />
+        <meta name="twitter:image" content={logoUrl} />
+      </head>
       <body
         // className={`${quicksandFont.variable} font-sans antialiased`}
         className='font-sans antialiased'
