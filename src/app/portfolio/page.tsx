@@ -4,6 +4,22 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export default function PortfolioPage() {
+  const projects = [
+    {
+      id: '1',
+      title: 'TakePics.AI',
+      description: 'A website that allows users to generate AI generated pictures of themselves',
+      link: "/portfolio/projects/takepics"
+    },
+    {
+      id: '2',
+      title: 'Fintz Bot',
+      description: 'The bot that helps you track your expenses and manage your finances!',
+      link: "/portfolio/projects/fintzbot"
+    },
+    // Adicione quantos projetos quiser aqui...
+  ];
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -15,22 +31,23 @@ export default function PortfolioPage() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* This is a placeholder for future projects */}
-            <Card>
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold mb-2">Project Placeholder</h3>
-                <p className="text-muted-foreground mb-4">
-                  This is a placeholder for future projects. More details will be added later.
-                </p>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" asChild className="w-full">
-                  <Link href="/portfolio/placeholder">
-                    View Details
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
+            {[...projects].reverse().map(project => (
+              <Card key={project.id}>
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-muted-foreground mb-4">
+                    {project.description}
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Button variant="outline" asChild className="w-full">
+                    <Link href={project.link}>
+                      View Details
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
           </div>
         </div>
       </main>
