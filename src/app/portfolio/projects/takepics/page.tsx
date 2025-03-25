@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
+import { TechnologiesSection } from "@/components/TechnologiesSection"
 
 export default function FintzBotProjectPage() {
   return (
@@ -20,57 +20,51 @@ export default function FintzBotProjectPage() {
           <div className="space-y-2">
             <h1 className="text-4xl font-bold">TakePics.AI</h1>
             <p className="text-xl text-muted-foreground">
-              A website that allows users to generate AI generated pictures of themselves
+              Website that lets you create AI images of you and your friends
             </p>
           </div>
 
           <div className="flex justify-center">
             <Image
-              src="/projects/takepics.png"
+              src="/projects/takepics.webp"
               alt="Descrição da imagem"
               width={600}
               height={400}
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md border-1 border-gray-200"
             />
           </div>
 
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">About the Project</h2>
             <p>
-              TakePics.AI is an innovative platform that lets you create a personalized model by uploading 
-              your own photos. With this custom model, you can generate ultra-realistic images of yourself using a 
-              variety of custom and pre-made prompts. Powered by Replicate and the advanced Flux model, TakePics.AI 
-              delivers remarkably lifelike results, making it easy to experiment with new looks, create artistic avatars, 
+              TakePics.AI is a website/platform that lets you create your own virtual model/avatar by uploading your own photos. With this custom model, you can generate super-realistic images of yourself using a 
+              variety of pre-made scenarios, costumes, and more.
+            </p>
+            <p>
+              Powered by Replicate and the state-of-the-art Flux model, TakePics.AI delivers lifelike results, making it easy to experiment with new looks, create artistic avatars, 
               or simply generate your new profile picture.
-              
-              <br /><br /> Check out the website clicking {" "}
+            </p>
+            <p>
+              Check it out at {" "}
                 <a 
                   href="https://takepics.ai" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-violet-800 hover:underline"
+                  className="text-violet-700 hover:underline"
                   >
-                    here
-                </a>
+                    takepics.ai
+                </a>              
             </p>
           </div>
 
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold">Technologies Used</h2>
-            <div className="flex flex-wrap gap-2">
-              <Card>
-                <CardContent className="px-4 py-2 text-sm">Nuxt</CardContent>
-              </Card>
-              <Card>
-                <CardContent className="px-4 py-2 text-sm">Replicate</CardContent>
-              </Card>
-            </div>
-          </div>
+          <TechnologiesSection
+            technologies={["Nuxt", "Supabase", "Replicate API", "Flux"]} 
+          />
 
           <div>
             <Button asChild>
-              <Link href="/contact">
-                Discuss a Similar Project
+              <Link href="/contact" className="text-violet-700 bg-white hover:bg-violet-50 border-violet-700 border-1">
+                Discuss a similar project
               </Link>
             </Button>
           </div>

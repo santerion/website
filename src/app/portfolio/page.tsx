@@ -8,13 +8,13 @@ export default function PortfolioPage() {
     {
       id: '1',
       title: 'TakePics.AI',
-      description: 'A website that allows users to generate AI generated pictures of themselves',
+      description: 'Website that lets you create AI images of you and your friends',
       link: "/portfolio/projects/takepics"
     },
     {
       id: '2',
       title: 'Fintz Bot',
-      description: 'The bot that helps you track your expenses and manage your finances!',
+      description: 'A WhatsApp bot that is truly smart and conversational, helping you track and manage your expenses',
       link: "/portfolio/projects/fintzbot"
     },
     // Adicione quantos projetos quiser aqui...
@@ -32,8 +32,8 @@ export default function PortfolioPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[...projects].reverse().map(project => (
-              <Card key={project.id}>
-                <CardContent className="pt-6">
+              <Card key={project.id} className="flex flex-col">
+                <CardContent className="flex-1 pt-6">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-muted-foreground mb-4">
                     {project.description}

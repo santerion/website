@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
+import { TechnologiesSection } from "@/components/TechnologiesSection"
 
 export default function FintzBotProjectPage() {
   return (
@@ -20,7 +20,7 @@ export default function FintzBotProjectPage() {
           <div className="space-y-2">
             <h1 className="text-4xl font-bold">Fintz Bot</h1>
             <p className="text-xl text-muted-foreground">
-              The bot that helps you track your expenses and manage your finances!
+              A WhatsApp bot that is truly smart and conversational, helping you track and manage your expenses
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function FintzBotProjectPage() {
             <h2 className="text-2xl font-semibold">About the Project</h2>
             <p>
               Fintz Bot is a WhatsApp chatbot designed to help people record and manage their daily expenses in a practical way. 
-              It aims to address the difficulty of financial organization by leveraging WhatsApp’s widespread usage. The idea is that users can 
+              It aims to address the difficulty of financial organization by leveraging WhatsApp's widespread usage. The idea is that users can 
               submit details of their purchases and store them in seconds. The project includes features like listing expenses over a certain period 
               and exporting tables in Excel format.
               
@@ -54,20 +54,9 @@ export default function FintzBotProjectPage() {
             </p>
           </div>
 
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold">Technologies Used</h2>
-            <div className="flex flex-wrap gap-2">
-              <Card>
-                <CardContent className="px-4 py-2 text-sm">Python</CardContent>
-              </Card>
-              <Card>
-                <CardContent className="px-4 py-2 text-sm">OpenAI</CardContent>
-              </Card>
-              <Card>
-                <CardContent className="px-4 py-2 text-sm">WhatsApp API</CardContent>
-              </Card>
-            </div>
-          </div>
+          <TechnologiesSection 
+            technologies={["Python", "OpenAI", "WhatsApp API"]} 
+          />
 
           <div>
             <Button asChild>

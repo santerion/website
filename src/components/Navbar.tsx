@@ -15,7 +15,7 @@ import {
 
 export function Navbar() {
   return (
-    <header className="w-full py-1 px-20 border-b">
+    <header className="w-full py-1 px-4 md:px-20 border-b">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-semibold flex items-center gap-1">
           <Image 
@@ -37,7 +37,7 @@ export function Navbar() {
               </Link>
             </NavigationMenuItem>
             
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <span className="text-md font-semibold text-violet-950">About</span>
@@ -51,7 +51,7 @@ export function Navbar() {
                   <span className="text-md font-semibold text-violet-950">Partners</span>
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
             
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
