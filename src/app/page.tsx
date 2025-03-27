@@ -88,34 +88,34 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">5+</div>
-                <p className="text-gray-800">Years in business</p>
+                <p className="text-gray-800 dark:text-gray-300">Years in business</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">100%</div>
-                <p className="text-gray-800">Projects on budget and on time</p>
+                <p className="text-gray-800 dark:text-gray-300">Projects on budget and on time</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">8 months</div>
-                <p className="text-gray-800">of avg. project life-cycle</p>
+                <p className="text-gray-800 dark:text-gray-300">of avg. project life-cycle</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-28">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">Flexibility</div>
-                <p className="text-gray-800">Scale up or ramp down the team</p>
+                <p className="text-gray-800 dark:text-gray-300">Scale up or ramp down the team</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">Pricing</div>
-                <p className="text-gray-800">Min. project U$25k total</p>
+                <p className="text-gray-800 dark:text-gray-300">Min. project U$25k total</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">Team</div>
-                <p className="text-gray-800">60% senior engineers, from startups to FAANG</p>
+                <p className="text-gray-800 dark:text-gray-300">60% senior engineers, from startups to FAANG</p>
               </div>
             </div>
 
@@ -182,7 +182,7 @@ export default function Home() {
             <p className="text-xl text-muted-foreground mb-8">
               Let's have a call and discuss your custom solution
             </p>
-            <Button asChild size="lg" className="bg-gradient-to-r from-violet-700 to-violet-950 hover:bg-gradient-to-r hover:from-violet-600 hover:to-violet-900 shadow-md shadow-violet-300">
+            <Button asChild size="lg" className="bg-gradient-to-r from-violet-700 to-violet-950 hover:bg-gradient-to-r hover:from-violet-600 text-white hover:to-violet-900 shadow-md shadow-violet-300 dark:shadow-violet-600">
               <Link href="/contact">
                 Contact Us
               </Link>

@@ -19,7 +19,7 @@ export default function SmartZapProjectPage() {
 
           <div className="space-y-2">
             <h1 className="text-4xl font-bold">SmartZap</h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground ">
               It's like ChatGPT, but inside WhatsApp.
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function SmartZapProjectPage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">About the Project</h2>
             <p>
-              SmartZap is a WhatsApp bot that uses the best AI models to help you in any way.
+              SmartZap is a WhatsApp bot that uses the best AI models to help you in any way directly from your WhatsApp.
             </p>
           </div>
 
@@ -46,9 +46,9 @@ export default function SmartZapProjectPage() {
           />
 
           <div>
-          <Button>
+          <Button variant="outline">
             <Link href="/contact">
-              Discusssss a similar project
+              Discuss a similar project
             </Link>
           </Button>
           </div>

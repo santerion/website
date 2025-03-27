@@ -62,7 +62,7 @@ export default function FintzBotProjectPage() {
           />
 
           <div>
-            <Button asChild>
+            <Button asChild variant="outline">
               <Link href="/contact" className="text-violet-700 bg-white hover:bg-violet-50 border-violet-700 border-1">
                 Discuss a similar project
               </Link>

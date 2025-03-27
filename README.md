@@ -1,6 +1,6 @@
 # Santerion - Software Development Company Website
 
-This is a simple website for a software development company built with Next.js and Shadcn UI. The website includes a landing page and a structure for adding portfolio projects.
+This is a simple website for a software development company built with Next.js and Shadcn UI. The website includes a landing page and a structure for adding projects projects.
 
 ## Features
 
@@ -39,8 +39,8 @@ npm run dev
 ## Project Structure
 
 - `src/app/page.tsx` - Landing page
-- `src/app/portfolio/page.tsx` - Portfolio overview page
-- `src/app/portfolio/[project]/page.tsx` - Individual project pages
+- `src/app/projects/page.tsx` - Portfolio overview page
+- `src/app/projects/[project]/page.tsx` - Individual project pages
 - `src/app/contact/page.tsx` - Contact page
 - `src/components/` - Reusable components
   - `Navbar.tsx` - Navigation bar component
@@ -49,9 +49,9 @@ npm run dev
 
 ## Customization
 
-To add new projects to the portfolio:
+To add new projects to the projects:
 
-1. Create a new folder under `src/app/portfolio/` with the project slug
+1. Create a new folder under `src/app/projects/` with the project slug
 2. Create a `page.tsx` file in the new folder with the project details
 
 ## Technologies Used

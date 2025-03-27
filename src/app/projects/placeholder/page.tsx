@@ -42,7 +42,7 @@ export default function PlaceholderProjectPage() {
             </Card>
           </div>
           
-          <Button asChild>
+          <Button asChild variant="outline">
             <Link href="/contact">
               Discuss a Similar Project
             </Link>

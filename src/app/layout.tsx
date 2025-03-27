@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import { getPublicPath } from "@/lib/path-utils"
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const quicksandFont = Quicksand({
   subsets: ["latin"],
@@ -50,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Explicit Open Graph meta tags */}
         <meta property="og:image" content={logoUrl} />
@@ -64,7 +65,9 @@ export default function RootLayout({
         className='font-sans antialiased'
         suppressHydrationWarning={true}
       >
-        {children}
+        <ThemeProvider defaultTheme="system" storageKey="santerion-theme">
+          {children}
+        </ThemeProvider>
         {/* 100% privacy-first analytics */}
         <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       </body>
