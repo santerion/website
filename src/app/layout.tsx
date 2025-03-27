@@ -65,7 +65,7 @@ export default function RootLayout({
         className='font-sans antialiased'
         suppressHydrationWarning={true}
       >
-        <ThemeProvider defaultTheme="system" storageKey="santerion-theme">
+        <ThemeProvider defaultTheme="light" storageKey="santerion-theme">
           {children}
         </ThemeProvider>
         {/* 100% privacy-first analytics */}
