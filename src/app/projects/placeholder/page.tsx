@@ -10,14 +10,14 @@ export default function PlaceholderProjectPage() {
       <main className="flex-1 py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <Link href="/portfolio" className="text-sm text-muted-foreground hover:underline">
+            <Link href="/projects" className="text-sm text-muted-foreground hover:underline">
               ← Back to Portfolio
             </Link>
           </div>
           
           <h1 className="text-4xl font-bold mb-4">Project Placeholder</h1>
           <p className="text-xl text-muted-foreground mb-8">
-            A sample project to demonstrate the portfolio structure.
+            A sample project to demonstrate the projects structure.
           </p>
           
           <div className="mb-12 bg-muted h-[300px] rounded-lg flex items-center justify-center">

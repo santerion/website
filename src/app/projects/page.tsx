@@ -9,13 +9,19 @@ export default function PortfolioPage() {
       id: '1',
       title: 'TakePics.AI',
       description: 'Website that lets you create AI images of you and your friends',
-      link: "/portfolio/projects/takepics"
+      link: "/projects/takepics"
     },
     {
       id: '2',
       title: 'Fintz Bot',
       description: 'A WhatsApp bot that is truly smart and conversational, helping you track and manage your expenses',
-      link: "/portfolio/projects/fintzbot"
+      link: "/projects/fintzbot"
+    },
+    {
+      id: '3',
+      title: 'SmartZap',
+      description: 'A WhatsApp bot that uses the best AI models to help you in any way',
+      link: "/projects/smartzap"
     },
     // Adicione quantos projetos quiser aqui...
   ];
